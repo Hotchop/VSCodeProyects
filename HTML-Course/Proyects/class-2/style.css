@@ -1,0 +1,49 @@
+p{
+    color: purple;
+    font-size: 1rem;
+}
+
+h1{
+    color: aqua;
+}
+
+h2{
+    color: chocolate;
+}
+
+span{
+    color: red;
+}
+
+section h2{
+    color:orange;
+
+}
+
+h3{
+    font-size: 3rem;
+}
+
+nav a:nth-child(2){
+    text-transform: uppercase;
+}
+
+section{
+    background-color: antiquewhite;
+}
+
+#titulo{
+    text-transform: uppercase;
+}
+
+.section-1{
+    background-color: aquamarine;
+}
+
+.contenedor{
+    font-size: 2rem;
+}
+
+.section-2{
+    background-color: cornflowerblue;
+}
