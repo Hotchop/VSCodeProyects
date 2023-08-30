@@ -1,0 +1,17 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.articulo{
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    color: white;
+    padding: 2.5rem;
+}
+
+.articulo p{
+    text-align: justify;
+}

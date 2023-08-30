@@ -1,0 +1,27 @@
+html{
+    box-sizing: border-box; /* respeta el tamaño del contenido */
+}
+
+*,/* asteriscos aplitan a todo el css */
+*:before
+*:after{
+    box-sizing: inherit;
+}
+.cuadrado-1{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    margin: 20px 30px;
+    display: inline-block;
+}
+
+.cuadrado-2{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    padding: 10px 20px 10px 20px;/* arriba, izq, abajo, der -- o solo dos pora verital y horizontal */
+    box-sizing: border-box;
+    display: inline-block;
+}
