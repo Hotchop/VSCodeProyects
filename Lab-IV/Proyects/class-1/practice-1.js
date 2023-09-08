@@ -43,14 +43,14 @@ function suma (array){
 console.log(suma(array));
 
 //Punto 7
-function Persona(nombre,edad,profesion){
+function Empleado(nombre,edad,profesion){
     this.nombre = nombre
     this.edad = edad
     this.profesion = profesion
 }
 
-var persona1 = new Persona("Nico","26","Programador")
-console.log(persona1);
+var empleado1 = new Empleado("Nico","26","Programador")
+console.log(empleado1);
 
 //Punto 8
 function Producto(nombre,precio,stock){
@@ -87,10 +87,61 @@ const pares = numeros.filter(num => num%2 === 0)
 console.log(pares);
 
 //Punto 13
-function creaPersona(nombre,edad){
+/**function creaPersona(nombre,edad){
     let persona = new Persona(nombre,edad)
     return persona
 }
 
 var nuevaPersona = creaPersona('Klee','10')
-console.log(nuevaPersona);
+console.log(nuevaPersona);*/
+
+//Punto 14
+class Persona{
+    constructor(nombre,edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    get getNombre(){
+        return this.nombre
+    }
+
+    get getEdad(){
+        return this.edad
+    }
+}
+
+function obtenerInfo(persona){
+    console.log("Nombre: "+ persona.getNombre +" - Edad: "+ persona.getEdad)
+}
+
+var persona1 = new Persona("Nico",26);
+
+obtenerInfo(persona1);
+
+//Punto 15
+const cadena = [1,2,3];
+
+function duplicarArray(array){
+    let dupArray = [...array];
+    dupArray.forEach((num,index,array) => array[index] = num*2);
+    return dupArray;
+}
+
+const dupArray = duplicarArray(cadena);
+console.log(dupArray);
+
+//Punto 16
+function invertirCadena(array){
+    let invertido = [...array];
+    return invertido.reverse();
+}
+
+const invertido = invertirCadena(cadena);
+console.log(invertido);
+
+//Punto 17
+const arrayPalabras = ["Cobre","Plata","Electrum","Oro","Platino"];
+function filtrarPorLongitud(array,num){
+    let aux = [...array];
+}
