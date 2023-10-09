@@ -1,0 +1,30 @@
+@import url(./style.css);
+
+.tabla{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tabla h2{
+    text-align: left;
+}
+
+.tabla table{
+    border-spacing: 0;
+}
+
+.tabla thead{
+    background-color: rgb(38, 37, 37);
+    color: white;
+    
+}
+
+.tabla th{
+    padding: 2rem 2rem;
+    height: 5rem;
+    text-align: left;
+}
+

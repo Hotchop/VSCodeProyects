@@ -1,0 +1,26 @@
+@import url(./style.css);
+
+.section-forms{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formas{
+    display: flex;
+    flex-direction: column;
+}
+
+.nuevo-cliente{
+    width: auto;
+}
+.campo{
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 0rem;
+}
+
+.campo input{
+    width: 70%;
+    margin-left: auto;
+}

@@ -1,0 +1,22 @@
+<!-- Reciben sus string de forma dinamica -->
+<h1>{{title}}</h1>  
+<input type="text" [placeholder]="textoPlace" id="">
+<!-- Corre una funcion de alerta cuando se hace click -->
+<input type="button" (click)="hacerClick()" value="Enviar">
+<!-- Recibe texto del imput y lo muestra usando el h2 -->
+<input 
+    type="text"
+    placeholder="Ingrese texto"
+    [(ngModel)]="binding"
+    >
+
+<h2>{{binding}}</h2>
+<!-- Crea items de la lista iterando con un for en un array -->
+<ul *ngFor="let dia of lista">  
+    <li>{{dia}}</li>
+</ul>
+
+<!-- Muestra el titutlo si se cumple la condicion -->
+<div *ngIf="expresion"> 
+    <h3>Condicion true</h3>
+</div>
