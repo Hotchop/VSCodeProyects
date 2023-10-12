@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <title>Forms</title>
+</head>
+<body>
+    <form class="formulario">
+        <fieldset class="datos">
+            <legend class="leyenda-formas">Tus Datos</legend>
+            <div class="campo">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre...">
+
+            </div>
+            <div class="campo">
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Ingrese su email...">
+
+            </div>
+            <div class="campo">
+                <label for="tel">Telefono: </label>
+                <input type="tel" id="tel" placeholder="Ingrese su telefono...">
+
+            </div>
+            <div class="campo">
+                <label for="asunto">Asunto: </label>
+                <input type="text" id="asunto" placeholder="Ingrese su asunto...">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset class="datos">
+            <legend class="leyenda-formas">Pais</legend>
+            <div class="campo">
+                <label for="paises">Paises: </label>
+                <select name="paises" id="paises">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="ar">Argentina</option>
+                    <option value="br">Brasil</option>
+                    <option value="cl">Chile</option>
+                </select>
+                
+            </div>
+        </fieldset>
+
+        <fieldset class="datos">
+            <legend class="leyenda-formas">Informacion Extra</legend>
+            <div class="campo2">
+                <label for="cliente">Cliente</label>
+                <input 
+                    type="radio"
+                    id="cliente"
+                    name="tipo-cliente" 
+                    value="cliente"
+                    >  <!-- //Mismo name para que solo se seleccione uno. Son hermanos -->
+                    
+            </div>
+            <div class="campo2">
+                    <label for="proveedor">Proveedor</label>
+                    <input 
+                        type="radio"
+                        id="proveedor"
+                        name="tipo-cliente"
+                        value="proveedor"
+                        >
+                    
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoria de Interes</label>
+                <input list="categorias">
+                <datalist id="categorias">  <!-- Es un select con buscador -->
+                    <option value="Cocina">
+                    <option value="Living">
+                    <option value="Hogar">
+                    <option value="Exterior">
+                </datalist>
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@import url(./style.css);
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario fieldset{
+    width: 60%;
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+}
+
+.campo label{
+    width: 20%;
+    padding-top: .3rem;
+}
+
+.campo input,select{
+    width: 100%;
+}
+
+
+.campo2{
+    display: flex;
+    flex-direction: row;
+}
+
+.campo2 label{
+    width: 20%;
+    padding-top: .3rem;
+}
+
+.campo2 input{
+    margin-right: auto;
+}
+
+
+.leyenda-formas{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(3, 82, 140);
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    border-radius: .2rem;
+}
