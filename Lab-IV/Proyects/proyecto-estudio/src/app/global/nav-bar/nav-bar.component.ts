@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class NavBarComponent {
   
   logged:boolean = false;
+  devView:boolean = true;
 }

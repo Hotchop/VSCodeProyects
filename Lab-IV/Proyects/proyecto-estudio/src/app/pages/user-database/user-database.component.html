@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Database</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Usuario</th>
+            <th>Contraseña</th>
+            <th>Fecha</th>
+            <th>Puntaje</th>
+        </thead>
+        <tbody *ngFor="let item of list">
+            <!-- <td>{{item.usuario}}</td>
+            <td>{{item.password}}</td>
+            <div *ngFor="let score of puntajes">
+                <td>{{item.fecha}}</td>
+                <td>{{item.score}}</td>
+            </div> -->
+        </tbody>
+    </table>
+</body>
+</html>

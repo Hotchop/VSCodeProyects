@@ -10,6 +10,7 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { NavBarComponent } from './global/nav-bar/nav-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserDatabaseComponent } from './pages/user-database/user-database.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     UserProfileComponent,
     SignInComponent,
-    NavBarComponent
+    NavBarComponent,
+    UserDatabaseComponent
   ],
   imports: [
     BrowserModule,
