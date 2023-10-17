@@ -1,0 +1,53 @@
+.section{
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 5vw;
+}
+
+.section fieldset{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    background-color: #b19771;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+legend{
+    background-color: #b19771;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1vw;
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: .5rem 0rem;
+}
+
+.campo input:hover{
+    box-shadow: var(--shadow-elevation-medium);
+    transition: ease 0.5s;
+}
+
+.campo lable{
+    width: 30%;
+    margin-right: auto;
+}
+
+.typeable{
+    width: 60%;
+    margin-left: auto;
+}
+
+#access{
+    width: 20%;
+    margin: 0.5vw auto;
+}
+
+p{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}

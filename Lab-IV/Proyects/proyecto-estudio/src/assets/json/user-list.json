@@ -1,0 +1,23 @@
+{
+    "usuarios":[
+        {
+            "usuario": "Hotchop",
+            "password": "admin",
+            "id":"1",
+            "puntajes":[
+                {
+                    "fecha": "23-10-16",
+                    "score": "154000"
+                },
+                {
+                    "fecha": "23-10-16",
+                    "score": "181000"
+                },
+                {
+                    "fecha": "23-10-16",
+                    "score": "153200"
+                }
+            ]
+        }
+    ]
+}

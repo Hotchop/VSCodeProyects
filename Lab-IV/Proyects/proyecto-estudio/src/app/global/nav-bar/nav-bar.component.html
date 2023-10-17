@@ -1,0 +1,16 @@
+<header>
+    <nav class="navigation">
+        <div class="main-links">
+            <img src="/assets/img/raven-black-icon.png" alt="Black Raven Icon" id="page-icon">
+            <a routerLink="/home" class="text-link">Dungeon Legacy</a>
+            <a routerLink="/profile" class="text-link" id="profile" *ngIf="!logged">Log In</a>
+            <a routerLink="/user-profile" class="text-link" id="user-profile" *ngIf="logged">Profile</a>
+        </div>
+        <div class="bar-links">
+            <a routerLink="/home" class="bar-link">Home</a>
+            <a routerLink="/how-to-play" class="bar-link">How to Play</a>
+            <a routerLink="/game" class="bar-link">Game</a>
+            <a routerLink="/contact-us" class="bar-link">Contact Us</a>
+        </div>
+    </nav>
+</header>

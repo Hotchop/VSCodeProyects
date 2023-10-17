@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+  @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Raleway&family=Roboto:ital,wght@1,300&display=swap');
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'MedievalSharp', cursive;
+    background-color: #e9d3a8;
+    margin: 0;
+}
+
+:root {
+  --shadow-color: 34deg 31% 27%;
+  --shadow-elevation-low:
+    0px 1px 0.9px hsl(var(--shadow-color) / 0.42),
+    0px 1.4px 1.3px -1.9px hsl(var(--shadow-color) / 0.33),
+    -0.1px 3.6px 3.4px -3.7px hsl(var(--shadow-color) / 0.23);
+  --shadow-elevation-medium:
+    0px 1px 0.9px hsl(var(--shadow-color) / 0.44),
+    -0.1px 2.3px 2.2px -1.2px hsl(var(--shadow-color) / 0.37),
+    -0.2px 6.7px 6.3px -2.5px hsl(var(--shadow-color) / 0.29),
+    -0.5px 17.9px 16.8px -3.7px hsl(var(--shadow-color) / 0.22);
+  --shadow-elevation-high:
+    0px 1px 0.9px hsl(var(--shadow-color) / 0.41),
+    -0.1px 3px 2.8px -0.5px hsl(var(--shadow-color) / 0.38),
+    -0.2px 5.9px 5.5px -1.1px hsl(var(--shadow-color) / 0.34),
+    -0.3px 10.9px 10.2px -1.6px hsl(var(--shadow-color) / 0.31),
+    -0.6px 19.5px 18.3px -2.1px hsl(var(--shadow-color) / 0.27),
+    -1px 33px 31px -2.7px hsl(var(--shadow-color) / 0.24),
+    -1.6px 52.9px 49.6px -3.2px hsl(var(--shadow-color) / 0.2),
+    -2.4px 80.6px 75.6px -3.7px hsl(var(--shadow-color) / 0.17);
+}

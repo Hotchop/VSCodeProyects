@@ -1,0 +1,52 @@
+.navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-links{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-link{
+    text-decoration: none;
+    color: black;
+    font-size: 4rem;
+    padding: 2.5rem 1rem;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+#page-icon{
+    height: 10rem;
+}
+
+#profile,#user-profile{
+    margin-left: auto
+}
+
+.bar-links{
+    display: flex;
+    flex-direction: row;
+    background-color: #371d00;
+    height: 7.5rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+.bar-link{
+    text-decoration: none;
+    background-color: #81110f;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+.bar-link:hover{
+    background-color: #9b1210;
+    transition: ease .5s;
+}
