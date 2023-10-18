@@ -6,20 +6,18 @@
     <title>User Database</title>
 </head>
 <body>
-    <table>
-        <thead>
+    <table class="table">
+        <thead class="table-header">
             <th>Usuario</th>
-            <th>Contraseña</th>
             <th>Fecha</th>
             <th>Puntaje</th>
         </thead>
-        <tbody *ngFor="let item of list">
-            <!-- <td>{{item.usuario}}</td>
-            <td>{{item.password}}</td>
-            <div *ngFor="let score of puntajes">
-                <td>{{item.fecha}}</td>
-                <td>{{item.score}}</td>
-            </div> -->
+        <tbody *ngFor="let item of list" class="table-body"> <!-- Por cada usuario crea rows  -->
+            <tr *ngFor="let puntaje of item.puntajes"> <!-- Cada row del usuario tiene su puntaje -->
+                <td>{{item.usuario}}</td>
+                <td>{{puntaje.fecha}}</td>
+                <td>{{puntaje.score}}</td>
+            </tr>
         </tbody>
     </table>
 </body>

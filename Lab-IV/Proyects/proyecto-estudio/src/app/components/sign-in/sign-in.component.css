@@ -19,6 +19,13 @@ legend{
     font-size: 1vw;
 }
 
+.error{
+    background-color: rgb(243, 145, 145);
+    color: rgb(165, 4, 4);
+    text-align: center;
+    margin: 0.2rem 0;
+}
+
 .campo{
     display: flex;
     flex-direction: row;

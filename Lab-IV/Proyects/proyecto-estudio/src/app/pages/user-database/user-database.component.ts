@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
+import { usuario,puntaje } from 'src/app/intefaces/interfaces';
+import { UserBaseService } from 'src/app/services/user-base.service';
 
-interface usuario{
-
-}
 
 @Component({
   selector: 'app-user-database',
@@ -11,4 +10,16 @@ interface usuario{
 })
 export class UserDatabaseComponent {
     list: usuario[] = [];
+
+    constructor(private userBase: UserBaseService){
+        this.mostrarUsuarios();
+    }
+
+    async mostrarUsuarios(){
+      try {
+        this.list = await this.userBase.getUsers();
+      } catch (error) {
+        alert('Error al buscar usuarios')
+      }
+    }
 }

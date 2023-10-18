@@ -1,0 +1,23 @@
+.table{
+    width: 50%;
+    margin: 5rem auto;
+    font-size: 1.5vw;
+
+}
+
+.table-header{
+    color: #e9d3a8;
+    background-color: #371d00;
+}
+
+.table th,td{
+    border: 1px #8c714f;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.table td{
+    text-align: center;
+    background-color: #8c714f;
+    color: #e9d3a8;
+}

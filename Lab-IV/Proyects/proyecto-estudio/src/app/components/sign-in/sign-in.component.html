@@ -1,19 +1,23 @@
 <section class="section">
     <fieldset>
         <legend>Create Account</legend>
-        <form action="" id="login">
+        <span class="error" *ngIf="register.controls['usuario'].getError('required') && register.touched">Usuario requerido</span>
+        <span class="error" *ngIf="register.controls['usuario'].getError('minlength') && register.touched">Usuario minimo 3 letras</span>
+        <span class="error" *ngIf="register.controls['password'].getError('required') && register.touched">Contraseña requerida</span>
+        <span class="error" *ngIf="register.controls['password'].getError('minlength') && register.touched">Contraseña minimo 3 letras</span>
+        <form action="" id="login" (ngSubmit)="crearUsuario()" [formGroup]="register">
             <div class="campo">
                 <label for="user">User:</label>
-                <input type="text" id="user" class="typeable" placeholder="Type username...">
+                <input type="text" id="user" class="typeable" placeholder="Type username..." formControlName="username">
             </div>
             <div class="campo">
                 <label for="password">Password:</label>
-                <input type="password" id="password" class="typeable" placeholder="Type password..." >
+                <input type="password" id="password" class="typeable" placeholder="Type password..." formControlName="password">
             </div>
-            <div class="campo">
+            <!-- <div class="campo">
                 <label for="password">Verify Password:</label>
                 <input type="password" id="password" class="typeable" placeholder="Retype password...">
-            </div>
+            </div> -->
             <div class="campo">
                 <input type="button" value="Access" id="access">
             </div>
