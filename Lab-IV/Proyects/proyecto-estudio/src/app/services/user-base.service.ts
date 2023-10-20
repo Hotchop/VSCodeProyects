@@ -10,7 +10,19 @@ export class UserBaseService {
   url = 'http://localhost:4000/usuarios'
 
   constructor(private router: Router) { }
+
+  /* async getUserByName(username: string){
+    try {
+      const resultado = await fetch(`${this.url}?username_like=${username}`);
+      const perfil = resultado.json();
+      return perfil;
+      
+    } catch (error) {
+      alert("Error loggin user");
+    }
+  } */
   
+
   async getUserProfile(id: number){
     try {
       const resultado = await fetch(`${this.url}/${id}`);
@@ -21,6 +33,8 @@ export class UserBaseService {
       alert('No se pueden conseguir los usuarios')
     }
   }
+
+
   async getUsers(){
     try {
       const resultado = await fetch(this.url);
@@ -31,6 +45,7 @@ export class UserBaseService {
       alert('No se pueden conseguir los usuarios')
     }
   }
+
 
   async postUser(user: usuario){
     try {
@@ -46,7 +61,8 @@ export class UserBaseService {
     }
   }
 
-  async deleteUser(id: number){
+
+  async deleteUser(id: string){
     try {
       await fetch(`${this.url}/${id}`,{method: 'DELETE'});
       this.router.navigate(['home']);
@@ -54,6 +70,7 @@ export class UserBaseService {
       alert('Error al borrar usuario')
     }
   }
+
 
   async modifyUser(user: usuario){
     try {

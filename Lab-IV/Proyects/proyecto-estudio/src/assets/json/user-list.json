@@ -1,23 +1,41 @@
 {
-    "usuarios":[
+  "usuarios": [
+    {
+      "usuario": "Hotchop",
+      "password": "admin",
+      "id": "1",
+      "puntajes": [
         {
-            "usuario": "Hotchop",
-            "password": "admin",
-            "id":"1",
-            "puntajes":[
-                {
-                    "fecha": "23-10-16",
-                    "score": "154000"
-                },
-                {
-                    "fecha": "23-10-16",
-                    "score": "181000"
-                },
-                {
-                    "fecha": "23-10-16",
-                    "score": "153200"
-                }
-            ]
+          "fecha": "23-10-16",
+          "score": "154000"
+        },
+        {
+          "fecha": "23-10-16",
+          "score": "181000"
+        },
+        {
+          "fecha": "23-10-16",
+          "score": "153200"
         }
-    ]
+      ]
+    },
+    {
+      "usuario": "Sableye",
+      "password": "pokemon",
+      "puntajes": [],
+      "id": "l3Yx__K"
+    },
+    {
+      "usuario": "Treeko",
+      "password": "grass",
+      "puntajes": [],
+      "id": "nKJaaPK"
+    },
+    {
+      "usuario": "Torchic",
+      "password": "fire",
+      "puntajes": [],
+      "id": "qtxIU9N"
+    }
+  ]
 }

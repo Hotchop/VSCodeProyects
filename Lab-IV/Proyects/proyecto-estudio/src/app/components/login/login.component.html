@@ -1,17 +1,17 @@
 <section class="section">
     <fieldset>
         <legend>Log In</legend>
-        <form action="" id="login">
+        <form action="" id="login" (ngSubmit)="logUser()" [formGroup]="login">
             <div class="campo">
                 <label for="user">User:</label>
-                <input type="text" id="user" placeholder="Type username...">
+                <input type="text" id="user" placeholder="Type username..." formControlName="usuario">
             </div>
             <div class="campo">
                 <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Type password...">
+                <input type="password" id="password" placeholder="Type password..." formControlName="password">
             </div>
             <div class="campo">
-                <input type="button" value="Access" id="access">
+                <input type="submit" [routerLink]="['/user-profile']" value="Access" id="access">
             </div>
             <hr>
             <p>Don't have an account yet?</p>
