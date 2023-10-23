@@ -1,11 +1,16 @@
 .navigation{
     display: flex;
     flex-direction: column;
+    background-image: url(../../../assets/img/parchment-texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-links{
     display: flex;
     flex-direction: row;
+    
+    
 }
 
 .text-link{

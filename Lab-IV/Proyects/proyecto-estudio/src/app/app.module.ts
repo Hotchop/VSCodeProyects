@@ -11,6 +11,7 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { NavBarComponent } from './global/nav-bar/nav-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserDatabaseComponent } from './pages/user-database/user-database.component';
+import { ScriptsComponent } from './pages/scripts/scripts.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserDatabaseComponent } from './pages/user-database/user-database.compo
     UserProfileComponent,
     SignInComponent,
     NavBarComponent,
-    UserDatabaseComponent
+    UserDatabaseComponent,
+    ScriptsComponent
   ],
   imports: [
     BrowserModule,

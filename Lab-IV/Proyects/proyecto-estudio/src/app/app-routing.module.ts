@@ -5,6 +5,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { UserDatabaseComponent } from './pages/user-database/user-database.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { ScriptsComponent } from './pages/scripts/scripts.component';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'new-account',component:SignInComponent},
   {path:'user-database',component:UserDatabaseComponent},
   {path:'user-profile/:id',component:UserProfileComponent},
+  {path:'script-testing',component:ScriptsComponent},
   {path:'**',redirectTo:'home'}
 ];
 
