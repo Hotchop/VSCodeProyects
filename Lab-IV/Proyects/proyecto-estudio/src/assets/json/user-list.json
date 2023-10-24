@@ -22,7 +22,12 @@
     {
       "usuario": "Sableye",
       "password": "pokemon",
-      "puntajes": [],
+      "puntajes": [
+        {
+          "fecha": "23-23-16",
+          "score": "174000"
+        }
+      ],
       "id": "l3Yx__K"
     },
     {
@@ -36,6 +41,15 @@
       "password": "fire",
       "puntajes": [],
       "id": "qtxIU9N"
+    },
+    {
+      "usuario": "Lucia",
+      "password": "gamer",
+      "puntajes": [{
+        "fecha": "23-23-16",
+        "score": "160000"
+      }],
+      "id": "s8XQmJV"
     }
   ]
 }

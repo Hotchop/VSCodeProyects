@@ -6,6 +6,6 @@ export interface puntaje{
 export interface usuario{
     usuario: string,
     password: string,
-    puntajes: puntaje[]
+    puntajes: puntaje[],
     id?:string;
   };

@@ -18,7 +18,7 @@ export class ScriptsComponent {
   passTwo: string = '';
 
   constructor(private userBase: UserBaseService){
-    this.getArrays();
+    this.deconstruct();
   }
 
   async getArrays(){
@@ -28,13 +28,21 @@ export class ScriptsComponent {
       console.log(this.arrayOne);
       this.arrayTwo = [...this.arrayOne];
       console.log(this.arrayTwo);
-      this.userOne! = this.arrayOne[0].usuario;
-      this.userTwo! = this.arrayTwo[1].usuario;
 
     } catch (error) {
 
       alert('Error al recibir usuarios')
 
+    }
+  }
+
+  async deconstruct(){
+    try {
+      await this.getArrays();
+      this.userOne! = this.arrayOne[0].usuario;
+      this.userTwo! = this.arrayTwo[1].usuario;
+    } catch (error) {
+      alert('Error de busqueda')
     }
   }
 
